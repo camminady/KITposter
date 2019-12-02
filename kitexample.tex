@@ -1,0 +1,81 @@
+%% LaTeX-Beamer poster template for KIT design
+%% by Erik Burger, Christian Hammer
+%%
+%% version 1.2
+%%
+%% mostly compatible to KIT corporate design v1.2
+%% http://www.uni-karlsruhe.de/download/uka/Gestaltungsrichtlinien_komplett.pdf
+%%
+%% Problems, bugs and comments to
+%% burger@kit.edu
+
+\documentclass{beamer}
+
+%% Fill in the page size here. If the proportions of the fonts
+%% are not satisfactory, change the scale parameter
+\usepackage[orientation=portrait,size=a0,scale=1.4]{beamerposter}
+\usepackage{blindtext}
+
+\usepackage{comment}
+\mode<presentation>{\usetheme{kitposter}}
+
+\title[Short title]{Full title:\\[.4em] With all details}
+\subtitle{Something for XYZ 2009}
+\author{Firstname1 Lastname1, Firstname2 Lastname2}
+
+\institute{\textbf{Steinbuch Centre for Computing\\[.2em]
+Computational Science and Mathematical Methods }\\[.4em]
+Hermann-von-Helmholtz-Platz 1\\[.2em]
+76344 Eggenstein-Leopoldshafen\\[.4em]
+\href{https://www.scc.kit.edu/en/index.php}{www.scc.kit.edu}}
+
+\selectlanguage{english}
+
+
+\begin{document}
+% change the following line to "ngerman" for German style date and logos
+
+
+\begin{frame}
+	\blindtext
+
+	\vfill
+	\begin{minipage}{0.45\textwidth}                % THE LEFT HALF OF THE POSTER
+		
+		This is insanely ugly but I don't know how to make it pretty.
+		
+		\begin{block}{This is a rounded box}
+			Some text
+			\begin{itemize}
+				\item this
+				\item that
+			\end{itemize}
+		\end{block}
+		Remember:
+		\begin{align}
+			x^2+y^2=z^2
+		\end{align}
+		\begin{block}{Another block}
+			The quick brown fox jumps over the lazy dog.	
+		\end{block}
+		\begin{block}{Another block}
+			The quick brown fox jumps over the lazy dog.	
+		\end{block}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}                % THE LEFT HALF OF THE POSTER
+		\blindtext
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\linewidth]{logos/kitlogo_en_cmyk}
+			\caption{{\color{kit-blue100} Why does it say 'Abbildung' in German?}}
+			\label{fig:kitlogoencmyk}
+		\end{figure}
+		\begin{block}{Blindtext}
+			\blindtext
+		\end{block}
+	\end{minipage}
+	\vfill
+	\blindtext
+\end{frame}
+\end{document}
